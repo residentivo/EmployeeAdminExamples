@@ -1,0 +1,63 @@
+{
+  "departments": [
+    { "value": "1", "name": "Accounting" },
+    { "value": "2", "name": "Sales" },
+    { "value": "3", "name": "Plant" },
+    { "value": "4", "name": "Shipping" },
+    { "value": "5", "name": "Quality Control" }
+  ],
+  "roles": [
+    { "value": "1", "name": "Administrator" },
+    { "value": "2", "name": "Accounts Payable" },
+    { "value": "3", "name": "Accounts Receivable" },
+    { "value": "4", "name": "Employee Benefits" },
+    { "value": "5", "name": "General Ledger" },
+    { "value": "6", "name": "Payroll" },
+    { "value": "7", "name": "Inventory" },
+    { "value": "8", "name": "Production" },
+    { "value": "9", "name": "Quality Control" },
+    { "value": "10", "name": "Sales" },
+    { "value": "11", "name": "Orders" },
+    { "value": "12", "name": "Customers" },
+    { "value": "13", "name": "Shipping" },
+    { "value": "14", "name": "Returns" }
+  ],
+  "employees": [
+    {
+      "id": 1,
+      "first": "Larry",
+      "last": "Stooge",
+      "roles": [{ "id": "4", "name": "Employee Benefits" }],
+
+      "roles_id": [4],
+      "department_id": 1,
+      "department": { "id": 1, "name": "Accounting" }
+    },
+    {
+      "id": 2,
+      "first": "Curly",
+      "last": "Stooge",
+      "roles": [
+        { "id": "2", "name": "Accounts Payable" },
+        { "id": "3", "name": "Accounts Receivable" },
+        { "id": "5", "name": "General Ledger" }
+      ],
+      "roles_id": [2, 3, 5],
+      "department_id": 2,
+      "department": { "id": 2, "name": "Sales" }
+    },
+    {
+      "id": 3,
+      "first": "Moe",
+      "last": "Stooge",
+      "roles": [
+        { "id": "7", "name": "Inventory" },
+        { "id": "8", "name": "Production" },
+        { "id": "9", "name": "Quality Control" }
+      ],
+      "roles_id": [7, 8, 9],
+      "department_id": 3,
+      "department": { "id": 3, "name": "Plant" }
+    }
+  ]
+}

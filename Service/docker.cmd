@@ -1,0 +1,1 @@
+docker run -d -p 8030:80 -v puremvc.json:/data/db.json clue/json-server
